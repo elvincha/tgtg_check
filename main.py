@@ -8,6 +8,7 @@ from tgtg_client import first_auth_ui
 from stock_checker import check_and_notify
 from ui.sidebar import render_sidebar
 from ui.dashboard import render_dashboard
+from tgtg_client import get_tgtg_client
 
 def main():
     # Initialisation de l'application
@@ -20,7 +21,8 @@ def main():
     
     # Vérifier la première authentification
     first_auth_ui()
-    
+    # Initialisation du client TGTG
+    time.sleep(60)
     if st.session_state.is_running:
         now = datetime.now()
         check_and_notify()  # Exécuter la vérification

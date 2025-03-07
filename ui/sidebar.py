@@ -1,7 +1,7 @@
 import streamlit as st
 from utils.logger import log_message
 from stock_checker import check_and_notify
-
+from tgtg_client import get_tgtg_client
 def render_sidebar():
     """Affiche les éléments de la sidebar."""
     st.sidebar.header("Configuration")

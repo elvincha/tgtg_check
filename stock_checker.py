@@ -63,9 +63,7 @@ def check_and_notify():
         
         log_message(f"🔍 Vérification des offres TGTG à {st.session_state.last_check}...")
         
-        # Initialisation du client TGTG
         client = get_tgtg_client()
-        
         # Récupérer les items favoris
         log_message("📋 Récupération des favoris...")
         favorites = client.get_favorites()

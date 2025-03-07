@@ -61,5 +61,6 @@ def first_auth_ui():
                 try:
                     get_tgtg_client()
                     st.success("Authentification réussie ! Les credentials ont été sauvegardés.")
+                    
                 except Exception as e:
                     st.error(f"Erreur d'authentification : {str(e)}")
