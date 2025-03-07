@@ -1,7 +1,6 @@
 streamlit
 instagrapi
 tgtg
-smtplib
 email
 os
 json
